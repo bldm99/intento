@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <%- include('./componentes/bootstrap.ejs'); %>
+    
+</head>
+
+
+<body>
+
+    <section class="section-menu">
+        <header>
+       
+            <%- include('./componentes/menubar.ejs'); %>
+            
+        </header>
+    </section>
+
+    <section class="section-banner">
+        <div>
+            <h1>Matriculate Aqui</h1>
+        </div>
+    </section>
+    <br>
+    <br>
+
+    <section>
+
+        <div>
+            <form action="/save" method="POST">
+                <div class="mb-3">
+                    <h2>Selecciona un curso</h2>
+                    
+                    <select id="curso" name="curso" class="form-select" aria-label="Default select example">
+                        
+                        <option  value="Java" selected >Java</option>
+                        <option  value="PHP">PHP</option>
+                        <option   value=".NET">.NET</option>
+                      </select>
+
+                </div>
+               <br>
+               <br>
+                
+                <button type="submit"   class="btn btn-primary">Submit</button>
+                
+            </form>
+        </div>
+      
+        
+
+    </section>
+
+    
+    
+
+
+
+    
+
+    
+    
+</body>
+</html>

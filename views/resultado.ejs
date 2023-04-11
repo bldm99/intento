@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <%- include('./componentes/bootstrap.ejs'); %>
+
+</head>
+
+<style>
+    p{
+        color: grey;
+    }
+
+</style>
+
+
+<body>
+
+    <section class="section-menu">
+        <header>
+            <%- include('./componentes/menubar.ejs'); %>
+        </header>
+    </section>
+
+    <section 
+    style="margin-left: 20px; 
+    margin-right: 20px;
+    display: flex;
+    margin-top: 5px;
+    
+    color: white;
+    
+    
+    background: rgb(0, 0, 0);
+    ">
+        <div>
+
+            <div 
+            style="
+            display: flex;
+           
+             ">
+                <div style="width: 74%;">
+                    <img class="card-img-top" src="https://i0.wp.com/blogs.embarcadero.com/wp-content/uploads/2022/08/CodingBootCampFeatured-4427446.jpg?resize=1140%2C694&ssl=1" width="20%" alt="Card image cap">
+                </div>
+                
+                <div class="card-body">
+                    <h2>Detalles de matricula</h2>
+                    <h5 class="card-title">Curso</h5>
+                    <p class="card-text"><%= matriculado.curso %></p>
+                    <h5 class="card-title">Nivel</h5>
+                    <p class="card-text"><%= matriculado.nivel %></p>
+                    <h5 class="card-title">Tipo de Pago</h5>
+                    <p class="card-text"><%= matriculado.pago %></p>
+
+                    <h5 class="card-title">Precio</h5>
+                    <p class="card-text"><%= matriculado.precio %></p>
+
+                    
+                    <div style="
+                        padding-top: 3px; padding-bottom: 3px;
+                        background: white;
+                        width: 100%;
+                        color: white;
+                        
+                        background: blue;
+                       
+                        padding: 2px;
+                        border: 3px solid white; 
+                        border-radius: 10px;  
+                        ">
+                        DESCUENTO
+                        <h6><strong><%= comp %></strong></h6>
+
+                    </div>
+                    
+
+
+
+                    
+                    
+                </div>
+            </div>
+
+            
+            
+
+
+        </div>
+
+    </section>
+
+
+</body>
+
+</html>
